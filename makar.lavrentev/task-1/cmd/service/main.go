@@ -8,12 +8,12 @@ func main() {
 	var a, b int
 	_, err := fmt.Scan(&a)
 	if err != nil {
-		fmt.Println("Invalid first operand", err)
+		fmt.Println("Invalid first operand")
 		return
 	}
 	_, err = fmt.Scan(&b)
 	if err != nil {
-		fmt.Println("Invalid second operand", err)
+		fmt.Println("Invalid second operand")
 		return
 	}
 
@@ -21,7 +21,7 @@ func main() {
 	_, err = fmt.Scanf("%c", &operation)
 
 	if b == 0 && operation == '/' {
-		fmt.Println("Division by zero", err)
+		fmt.Println("Division by zero")
 		return
 	}
 
