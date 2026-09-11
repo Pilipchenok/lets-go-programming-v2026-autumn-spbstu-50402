@@ -18,7 +18,11 @@ func main() {
 	}
 
 	var operation byte
-	fmt.Scanf("%c", &operation)
+	_, err = fmt.Scanf("%c", &operation)
+	if err != nil {
+		fmt.Println("Invalid operation")
+		return
+	}
 
 	if b == 0 && operation == '/' {
 		fmt.Println("Division by zero")
