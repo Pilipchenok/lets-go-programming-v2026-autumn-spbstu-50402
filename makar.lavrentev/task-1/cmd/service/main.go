@@ -18,7 +18,7 @@ func main() {
 	}
 
 	var operation byte
-	_, err = fmt.Scanf("%c", &operation)
+	fmt.Scanf("%c", &operation)
 
 	if b == 0 && operation == '/' {
 		fmt.Println("Division by zero")
