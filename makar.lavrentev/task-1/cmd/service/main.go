@@ -24,7 +24,7 @@ func main() {
 		return
 	}
 
-	if b == 0 && operation == '/' {
+	if operation == '/' && b == 0 {
 		fmt.Println("Division by zero")
 		return
 	}
