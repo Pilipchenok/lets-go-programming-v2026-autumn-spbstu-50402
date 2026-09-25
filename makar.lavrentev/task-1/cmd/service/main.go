@@ -24,10 +24,7 @@ func main() {
 		return
 	}
 
-	if operation == '/' && b == 0 {
-		fmt.Println("Division by zero")
-		return
-	}
+	
 
 	var ans int
 	switch operation {
@@ -38,6 +35,10 @@ func main() {
 	case '*':
 		ans = a * b
 	case '/':
+		if b == 0 {
+			fmt.Println("Division by zero")
+			return
+		}
 		ans = a / b
 	default:
 		fmt.Println("Invalid operation")
