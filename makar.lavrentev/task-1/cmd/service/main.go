@@ -24,8 +24,6 @@ func main() {
 		return
 	}
 
-	
-
 	var ans int
 	switch operation {
 	case '+':
